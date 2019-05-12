@@ -27,8 +27,8 @@ class JoinChannelCommand extends commando.Command
             name: 'join',
             group: 'music',
             memberName: 'join',
-            description: 'Tilslutter sig til et rum på discorden for at spille musik.'
-            });
+            description: 'Joins the voice channel of the commander'
+        });
 }
 
 async run(message, args)
@@ -47,7 +47,7 @@ async run(message, args)
                     message.reply("Tilsluttet til "Musik" kanalen succesfuldt!");
                     server.queue.push(args);
                     Play(connection, message);
-                 })
+                })
             }
     }
     else
