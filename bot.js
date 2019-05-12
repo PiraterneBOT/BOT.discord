@@ -92,5 +92,11 @@ client.on('message', message => {
     }
 });
 
+client.on('message', message => {
+    if (message.content === 'ohøj') {
+    	message.channel.send(message.author + ' - <:Ohoj:576814763502206976>');
+    }
+});
+
 // THIS  MUST  BE  THIS  WAY 
 client.login(process.env.BOT_TOKEN);
