@@ -4,6 +4,10 @@ const invites = {};
 const commando = require('discord.js-commando');
 const YTDL = require('ytdl-core');
 
+client.on("ready", () => {
+  console.log("Jeg er klar!");
+});
+
 function Play(connection, message)
 {
     var server = servers[message.guild.id];
@@ -61,10 +65,6 @@ async run(message, args)
 }
 
 module.exports = JoinChannelCommand;
-});
-
-client.on("ready", () => {
-  console.log("Jeg er klar!");
 });
 
 client.on('guildMemberAdd', member => {
