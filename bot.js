@@ -10,6 +10,9 @@ client.on('guildMemberAdd', member => {
     member.guild.channels.get('576800839201718312').send(member + " - <:Ohoj:576814763502206976> & velkommen til discorden."); 
 });
 
+global.currentTeamMembers = [];
+global.servers = {};
+
 const wait = require('util').promisify(setTimeout);
 
 client.on('ready', () => {
