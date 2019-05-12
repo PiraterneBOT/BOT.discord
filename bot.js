@@ -6,8 +6,6 @@ client.on("ready", () => {
   console.log("Jeg er klar!");
 });
 
-import join_channel.js
-
 client.on('guildMemberAdd', member => {
     member.guild.channels.get('576800839201718312').send(member + " - <:Ohoj:576814763502206976> & velkommen til discorden."); 
 });
