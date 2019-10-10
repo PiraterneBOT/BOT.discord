@@ -90,13 +90,13 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'Ahoy
+    if (message.content === 'Ahoy') {
     	message.channel.send(message.author + ' - <:Ahoy:631893585033297931>');
     }
 });
 
 client.on('message', message => {
-    if (message.content === 'ahoy
+    if (message.content === 'ahoy'') {
     	message.channel.send(message.author + ' - <:Ahoy:631893585033297931>');
     }
 });
