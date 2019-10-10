@@ -7,7 +7,7 @@ client.on("ready", () => {
 });
 
 client.on('guildMemberAdd', member => {
-    member.guild.channels.get('576800839201718312').send(member + " - <:Ohoj:576814763502206976> & velkommen til discorden."); 
+    member.guild.channels.get('576800839201718312').send(member + " - <:Ahoy:631893585033297931> & welcome to the discord!");
 });
 
 global.currentTeamMembers = [];
@@ -90,14 +90,14 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'Ohøj') {
-    	message.channel.send(message.author + ' - <:Ohoj:576814763502206976>');
+    if (message.content === 'Ahoy
+    	message.channel.send(message.author + ' - <:Ahoy:631893585033297931>');
     }
 });
 
 client.on('message', message => {
-    if (message.content === 'ohøj') {
-    	message.channel.send(message.author + ' - <:Ohoj:576814763502206976>');
+    if (message.content === 'ahoy
+    	message.channel.send(message.author + ' - <:Ahoy:631893585033297931>');
     }
 });
 
